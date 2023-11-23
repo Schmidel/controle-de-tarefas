@@ -10,12 +10,9 @@ type Props = {
 }
 const App: React.FC<Props> = ({ onSave, diaSelecionadoFormatado }) => {
   // estado que altera o icone de loading no botão de salvar na modal
-
   const [loading, setLoading] = useState(false);
   // estado que controla o abre e fecha da modal
-
   const [open, setOpen] = useState(false);
-
   // função que mostra a modal
   const showModal = () => {
     setOpen(true);

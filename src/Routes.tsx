@@ -6,6 +6,7 @@ import{
 } from "react-router-dom";
 import { Entrada } from "./pages/Entrada";
 import NavLink from "./components/NavLink";
+import Financas from "./pages/financeiro"
 
 
 export function AppRoutes(){
@@ -16,6 +17,7 @@ export function AppRoutes(){
             <Routes>
                 <Route path="/" element={<Navigate to='/entrada' />}/>
                 <Route path="/entrada" element={<Entrada/>}/>
+                {/* <Route path="/financeiro" element={<Financas />}/> */}
                 {/* <Route path='*' element={<NotFound />}/> */}
             </Routes>
             

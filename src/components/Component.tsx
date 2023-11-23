@@ -1,19 +1,16 @@
-import { Fragment, useState } from 'react'; // importando hooks da biblioteca react
-import { Checkbox, Rate, Typography } from 'antd'; // importando items visuais da biblioteca
-import { TagOutlined, DeleteOutlined, EditOutlined } from '@ant-design/icons'; // importando icones visuais da biblioteca
-import { corModelos } from '../utils/values' // importando tipagem de arquivo utilidades criado
-import { Tarefa } from '../types/Tarefa' // importando tipagem de arquivo types criado 
-
+import { Fragment, useState } from 'react'; 
+import { Checkbox, Rate, Typography } from 'antd'; 
+import { TagOutlined, DeleteOutlined, EditOutlined } from '@ant-design/icons'; 
+import { corModelos } from '../utils/values' 
+import { Tarefa } from '../types/Tarefa' 
 
 const { Text } = Typography
 
-type ComponentProps = { // para diminuir essa parte do codigo, criar outro componente para passar as propriedades e importar aqui?
-    tarefa: Tarefa //um objeto do tipo Tarefa
-    setTarefas: React.Dispatch<React.SetStateAction<Tarefa[]>>; // uma função que atualiza o estado de uma lista de tarefas
+type ComponentProps = { 
+    tarefa: Tarefa 
+    setTarefas: React.Dispatch<React.SetStateAction<Tarefa[]>>;
     diaSelecionadoFormatado: string;
 }
-
-
 //componente React que renderiza uma tarefa e permite ao usuário atualizar o nome da tarefa. -> deveria ser mais que apenas o nome 
 function Component({ tarefa, setTarefas, diaSelecionadoFormatado }: ComponentProps) {
     const [open, setOpen] = useState(false) // passar esse open para ser a modal que ja utilizamos 
@@ -130,6 +127,4 @@ function Component({ tarefa, setTarefas, diaSelecionadoFormatado }: ComponentPro
         </tr>
     );
 }
-// quando edita a tarefa edita todas as demais, e quando exclui a tarefa exclui todos os dias 
-
 export default Component

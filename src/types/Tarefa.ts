@@ -3,7 +3,17 @@ type Progresso = {
     total: number;
     tipo?: string
 }
+
+export type TarefaEditaveis = {
+    nome: string;
+    progresso?: Progresso;
+    'data-recorrente'?: number[]
+    data: string
+    tipoDoEvento: 'dia' | 'intervalo-em-diante'
+}
+
 export type Tarefa = {
+    id: string
     nome: string;
     tipo: Cotiano | CompromissoAgendado | Ocasional;
     modelo?: Pessoal | Trabalho | Casa;

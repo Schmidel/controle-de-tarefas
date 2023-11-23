@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AppstoreOutlined, CheckCircleTwoTone , SettingOutlined, ClockCircleTwoTone, FundTwoTone, UpCircleTwoTone    } from '@ant-design/icons';
+import { AppstoreOutlined, CheckCircleTwoTone , SettingOutlined, ClockCircleTwoTone, FundTwoTone, UpCircleTwoTone} from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
+
 
 const items: MenuProps['items'] = [
 {
@@ -75,9 +76,9 @@ export default function NavLink(){
             <CheckCircleTwoTone /> Tarefas
             </Link>
         </Menu.Item>
-        <Menu.Item key='progresso'>
-            <Link to="/Progresso">
-            <FundTwoTone />  Progresso
+        <Menu.Item key='sinal'>
+            <Link to="/Sinal">
+            <FundTwoTone />  Sinal
             </Link>
             </Menu.Item>
         <Menu.Item key='cronometro'>
@@ -93,3 +94,6 @@ export default function NavLink(){
     </Menu>
   )  
 } 
+
+
+

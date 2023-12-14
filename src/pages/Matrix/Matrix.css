@@ -1,0 +1,112 @@
+@import '@radix-ui/colors/red.css';
+
+body{
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+#root{
+    margin: 0;
+    height: 100vh;
+    width: 100%;    
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+h1{
+    text-align: center;
+    padding: 1%;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    padding-left: 10%;
+}
+
+h3{
+    margin: 0;
+    padding-left: 2%;
+}
+
+section{
+    margin: 15px;
+    height: 400px;
+    align-items: center;
+    
+}
+
+.mostrar{
+    display: inline-flex;
+    margin-left: 15px;
+    justify-content: space-between;
+    width: 90%;
+    align-items: left;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 1;
+    box-shadow: 0 0 0 1px;
+    height: 41px;
+
+    
+}
+
+.task  {
+    display: inline-flex;
+    margin-left: 10%;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.DoNow{
+    background-color: rgb(98, 151, 194);
+
+}
+
+.Schedule{
+    background-color: rgb(241, 154, 53);
+
+}
+
+.Delegate{
+    background-color: rgb(230, 95, 5);
+
+}
+
+.Delete{
+    background-color: rgb(105, 105, 110);
+    
+}
+
+.Button {
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    height: 35px;
+  }
+.Button.red {
+    background-color: var(--red-8);
+    color: var(--red-11);
+  }
+  .Button.red:hover {
+    background-color: var(--red-7);
+  }
+  .Button.red:focus {
+    box-shadow: 0 0 0 2px var(--red-10);
+  }

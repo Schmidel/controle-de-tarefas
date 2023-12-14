@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AppstoreOutlined, CheckCircleTwoTone , SettingOutlined, ClockCircleTwoTone, FundTwoTone, UpCircleTwoTone} from '@ant-design/icons';
+import { AppstoreOutlined, CheckCircleTwoTone , SettingOutlined, ClockCircleTwoTone, FundTwoTone, UpCircleTwoTone, BorderInnerOutlined} from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 
@@ -89,6 +89,11 @@ export default function NavLink(){
         <Menu.Item key='Upgrades'>
             <Link to='/Upgrades'>
                 <UpCircleTwoTone />  Upgrades
+            </Link>
+        </Menu.Item>
+        <Menu.Item key='Matrix'>
+            <Link to='/Matrix'>
+            <BorderInnerOutlined />  Matrix
             </Link>
         </Menu.Item>
     </Menu>

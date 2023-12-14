@@ -42,10 +42,10 @@ const App: React.FC<Props> = ({ onSave, diaSelecionadoFormatado }) => {
 
   return (
     <>
-      <FileAddTwoTone type="primary" onClick={showModal}></FileAddTwoTone >
+      <FileAddTwoTone style={{ fontSize: '32px', marginRight: '660px' }} type="primary" onClick={showModal}></FileAddTwoTone >
       <Modal
         open={open}
-        title="Title"
+        title="Tarefa"
         onOk={handleOk}
         onCancel={handleCancel}
         footer={[

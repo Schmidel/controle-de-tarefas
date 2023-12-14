@@ -7,7 +7,7 @@ import{
 import { Entrada } from "./pages/Entrada";
 import NavLink from "./components/NavLink";
 import Financas from "./pages/financeiro"
-import Matrix from "pages/Matrix/Matrix";
+import Matriz from "pages/Matrix/Matrix";
 
 
 export function AppRoutes(){
@@ -17,7 +17,7 @@ export function AppRoutes(){
             <Routes>
                 <Route path="/" element={<Navigate to='/entrada' />}/>
                 <Route path="/entrada" element={<Entrada/>}/>
-                <Route path="/matrix" element={<Matrix/>}/>
+                <Route path="/matriz" element={<Matriz/>}/>
                 {/* <Route path="/financeiro" element={<Financas />}/> */}
                 {/* <Route path='*' element={<NotFound />}/> */}
             </Routes>

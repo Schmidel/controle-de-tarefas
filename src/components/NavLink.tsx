@@ -71,9 +71,9 @@ export default function NavLink(){
   };
   return (
     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key='entrada'>
+        <Menu.Item key=' entrada'>
             <Link to='/entrada'>
-            <CheckCircleTwoTone /> Tarefas
+            <CheckCircleTwoTone />  Tarefas
             </Link>
         </Menu.Item>
         <Menu.Item key='sinal'>
@@ -81,9 +81,9 @@ export default function NavLink(){
             <FundTwoTone />  Sinal
             </Link>
             </Menu.Item>
-        <Menu.Item key='cronometro'>
-            <Link to='/Cronometro'>
-                <ClockCircleTwoTone /> Cronometro
+        <Menu.Item key=' cronometro'>
+            <Link to='/ Cronometro'>
+                <ClockCircleTwoTone />  Cronometro
             </Link>
         </Menu.Item>
         <Menu.Item key='Upgrades'>
@@ -91,9 +91,9 @@ export default function NavLink(){
                 <UpCircleTwoTone />  Upgrades
             </Link>
         </Menu.Item>
-        <Menu.Item key='Matrix'>
-            <Link to='/Matrix'>
-            <BorderInnerOutlined />  Matrix
+        <Menu.Item key='Matriz'>
+            <Link to='/Matriz'>
+            <BorderInnerOutlined />  Matriz
             </Link>
         </Menu.Item>
     </Menu>

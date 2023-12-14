@@ -70,6 +70,7 @@ export default function Matrix() {
 
   return (
     <>
+     <DialogDemo addTask={onSubmit}/>
       <div className="wrapper">
         <section className="DoNow">
           <h1>DO NOW</h1>
@@ -146,7 +147,7 @@ export default function Matrix() {
         </section>
       </div>
 
-      <DialogDemo addTask={onSubmit} />
+     
     </>
   );
 }
